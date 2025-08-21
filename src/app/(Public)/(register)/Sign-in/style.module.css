@@ -1,0 +1,44 @@
+.body{
+    color: bisque;
+}
+
+.tittle{
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 155px;
+    font-size: 35px;
+    font-family: "Dancing Script", cursive;
+}
+
+.placeholder{
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15vh;
+    font-size: 25px;
+}
+
+.input{
+    border-color: black;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    font-size: 45px;
+}
+
+.email{
+    margin-right: 165px;
+}
+
+.pss{
+    display: flex;
+    margin-right: 138px;
+}
+.input:hover{
+    cursor: pointer;
+    border-color: black
+}

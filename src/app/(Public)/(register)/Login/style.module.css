@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2e9e4;
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25vh;
+    min-height: 200px;
+
+    h1 {
+      font-size: clamp(3.5rem, 5vw, 5rem);
+      font-family: var(--Dancing);
+      font-weight: 700;
+    }
+  }
+
+  .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    min-height: 400px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 300px;
+      margin-top: 15px;
+
+      label {
+        width: 100%;
+        min-width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        font-size: clamp(1rem, 1vw, 1rem);
+        font-family: var(--poppins);
+        font-weight: 700;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid var(--secondary);
+        font-size: 1rem;
+
+        &:last-of-type {
+          margin-bottom: 5px;
+        }
+      }
+
+      .forgotPassword {
+        width: 100%;
+        text-align: right;
+        font-size: 0.9rem;
+        color: var(--secondary);
+        margin-bottom: 15px;
+
+        &:hover {
+          color: var(--primary);
+          cursor: pointer;
+        }
+      }
+
+      button {
+        width: 50%;
+        padding: 10px;
+        background-color: var(--primary);
+        color: var(--white);
+        border-radius: 5px;
+        border: none;
+        font-size: clamp(1rem, 1.5vw, 2rem);
+        cursor: pointer;
+        margin-top: 20px;
+
+        &:hover {
+          background-color: darken(var(--primary), 10%);
+        }
+      }
+    }
+  }
+
+  .plataforms {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .or {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-family: var(--poppins);
+      font-size: clamp(1rem, 1.5vw, 2rem);
+      margin: 0 20px;
+    }
+
+    .borderOne,
+    .borderTwo {
+      width: 130px;
+      height: 2px;
+
+      background: #000;
+      border-radius: 50px;
+    }
+  }
+
+  .iconPlataforms {
+    width: 60px;
+    height: 60px;
+    background: #000;
+  }
+
+}
