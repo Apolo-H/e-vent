@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next/link"; 
 
 export default function Welcome() {
   return (
@@ -27,7 +27,7 @@ export default function Welcome() {
         </p>
       </div>
       <div className={styles.continue}>
-        <Link href="/Sign-in">
+        <Link href="/login">
           <p>Continue</p>
           <div className={styles.continueImage}>
             <Image

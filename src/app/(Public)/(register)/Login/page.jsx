@@ -1,4 +1,6 @@
 import styles from "./style.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Login() {
   return (
@@ -31,7 +33,15 @@ export default function Login() {
             <h1>Or</h1>
             <div className={styles.borderTwo}></div>
           </div>
-          <div className={styles.iconPlataforms}></div>
+          <div className={styles.iconPlataforms}>
+            <Image
+              src="/icon.png"
+              alt="GoogleIcon"
+              width={100}
+              height={100}
+              className={styles.iconPlataformsGoogle}
+            />
+          </div>
         </div>
         <div className={styles.registerLink}>
           <p>
