@@ -1,0 +1,21 @@
+/* Altera em 22/08/25 por Vitor 
+   Motivo: Adição das tags globais de padronização, fontes e cores.
+*/
+
+@use "_Base/colors.scss" as *;
+@use "_Base/typography.scss" as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $Poppins;
+    text-decoration: none;
+    }
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+}
